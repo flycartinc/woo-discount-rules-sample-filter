@@ -62,12 +62,11 @@ if(!class_exists('WooDiscountRulesSampleFilter')){
          *
          * */
         protected static function setFilters(){
-            $filter_types['product_weight'] = array(
+            self::$filter_types['product_weight'] = array(
                 'label' => __('Product weight', 'woo-discount-rules-sample-filter'),
                 'group' => __('Product', 'woo-discount-rules-sample-filter'),
                 'template' => WDR_SAMPLE_FILTER_PLUGIN_PATH . 'views/filters/weight.php',
             );
-            self::$filter_types = $filter_types;
         }
 
         /**
